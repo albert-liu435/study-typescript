@@ -15,3 +15,9 @@ https://blog.csdn.net/falwat/article/details/122165181
 https://www.php.cn/tool/vscode/470137.html
 
 Terminal ->run task tsc:build-tsconfig.json
+
+
+
+
+
+tsc hello.ts命令为将hello.ts编译成hello.js文件

@@ -1,3 +1,5 @@
+//: boolean就是类型注解，为变量添加类型约束
+//解释:约定了什么类型，就只能给变量赋值该类型的值，否则，就会报错.
 //布尔值
 let isDone: boolean = false;
 console.log(isDone);
@@ -49,5 +51,6 @@ enum Color {
   Blue,
 }
 let c: Color = Color.Green;
+console.log(c);
 
 export {};
