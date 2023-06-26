@@ -1,7 +1,7 @@
 // 类型声明文件
 
 // 类型
-type Props1 = { x: number; y: number }
+type Props1 = { x: number; y: number };
 
 // 错误演示：因为 .d.ts 文件中，不能出现可执行代码（代码实现）
 // 可执行代码
