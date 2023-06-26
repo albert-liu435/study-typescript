@@ -5,6 +5,8 @@
 // 声明接口后，直接使用接口名称作为变量的类型
 // 因为每一行只有一个属性类型，因此，属性类型后没有 ;( 分号 )
 
+
+
 interface IPerson {
   name: string;
   age: number;

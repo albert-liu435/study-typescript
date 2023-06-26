@@ -10,3 +10,4 @@
 //1元组类型可以确切地标记出有多少个元素，以及每个元素的类型
 //2该示例中，元素有两个元素，每个元素的类型都是 number。
 let position: [number, string] = [39, "114"];
+console.log(position);
