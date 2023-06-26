@@ -28,32 +28,3 @@
 // changesDirection(Direction.Left);
 
 // console.log(Direction);
-
-// // 当然，也可以给枚举中的成员初始化值
-// enum Direction {
-//   Up = 2,
-//   Down = 4,
-//   Left = 8,
-//   Right = 16,
-// }
-
-// function changeDirection(direction: Direction) {
-//   console.log(direction);
-// }
-
-// changeDirection(Direction.Up);
-
-// 字符串枚举：
-//注意:字符串枚举没有自增长行为，因此，字符串枚举的每个成员必须有初始值
-enum Direction {
-  Up = "UP",
-  Down = "DOWN",
-  Left = "LEFT",
-  Right = "RIGHT",
-}
-
-function changeDirection(direction: Direction) {
-  console.log(direction);
-}
-
-changeDirection(Direction.Up);

@@ -1,68 +1,23 @@
-// class Person {
-//   // age1: number;
-//   // gender = "男";
-//   // // gender: string = '男'
-//   age: number;
-//   gender: string;
-//   //成员初始化(比如，age: number ) 后，才可以通过 this.age 来访问实例成员
-//   //需要为构造函数指定类型注解，否则会被隐式推断为 any;造函数不需要返回值类型
-//   constructor(age: number, gender: string) {
-//     this.age = age;
-//     this.gender = gender;
-//   }
-// }
-// const p = new Person(18, "男");
-// console.log(p.age, p.gender);
+//1. 实例属性初始化
 
-// class Point {
-//   x: number = 1;
-//   y: number = 2;
+// 解释：
 
-//   scale(n: number) {
-//     this.x *= n;
-//     this.y *= n;
-//   }
-// }
-
-// const p = new Point();
-
-// p.scale(10);
-
-// console.log(p.x, p.y);
-
-//通过 extends 关键字实现继承
-//子类 Dog 继承父类 Animal，则 Dog 的实例对象 dog 就同时具有了父类 Animal 和子类 Dog 的所有属性和方法
-
-class Animal {
-  move() {
-    console.log("走两步");
-  }
+// 声明成员age，类型为number（没有初始值）。
+// 声明成员gender，并设置初始值，此时，可省略类型注解（TS类型推论为string类型）。
+class Person {
+  age: number;
+  gender = "男";
+  // gender: string = '男'
 }
 
-class Dog extends Animal {
-  name = "二哈";
+const p = new Person();
 
-  bark() {
-    console.log("旺旺！");
-  }
-}
+p.age;
+p.gender;
 
-const d = new Dog();
-d.move();
-d.bark();
-console.log(d.name);
+// TypeScript全面支持ES2015中引入的class关键字，并为其添加了类型注解和其他语法（比如，可见性修饰符等）。
 
-//通过 implements 关键字让 class 实现接口。
-//Person 类实现接口 Singable 意味着，Person 类中必须提供 Singable 接口中指定的所有方法和属性。
-interface Singale {
-  sing(): void;
-  name: string;
-}
+// class基本使用，如下：
 
-class Person implements Singale {
-  name = "jack";
-
-  sing() {
-    console.log("你是我的小呀小苹果");
-  }
-}
+// class Person {}  //创建类：class关键字+类的名称 {}
+// const p = new Person() //创建实例对象 p就是Person这个class的实例对象
