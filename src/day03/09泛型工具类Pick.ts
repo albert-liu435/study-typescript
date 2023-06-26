@@ -1,3 +1,5 @@
+//https://blog.csdn.net/p1967914901/article/details/127292145
+// 3. Pick<Type, Keys>
 // 作用：从Type中选择一组属性来构造新类型。
 
 // 解释：

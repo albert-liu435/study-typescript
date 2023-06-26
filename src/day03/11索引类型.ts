@@ -36,3 +36,4 @@ interface MyArray<T> {
 }
 let arr1: MyArray<number> = [1, 3, 5];
 arr1[0];
+console.log(arr1[1]);
