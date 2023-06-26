@@ -1,7 +1,7 @@
 //函数的类型实际上指的是:函数参数和返回值的类型
 //为函数指定类型的两种方式:1 单独指定参数、返回值的类型 2 同时指定参数、返回值的类型
-//1、单独指定参数、返回值的类型
 
+//1、单独指定参数、返回值的类型
 function add(num1: number, num2: number): number {
   return num1 + num2;
 }
@@ -14,6 +14,9 @@ console.log(add(1, 2));
 console.log(add1(3, 4));
 
 // 2. 同时指定参数、返回值类型：
+// 解释：当函数作为表达式时，可以通过类似箭头函数形式的语法来为函数添加类型。
+
+// 注意：这种形式只适用于函数表达式。
 const add2: (num1: number, num2: number) => number = (num1, num2) => {
   return num1 + num2;
 };
